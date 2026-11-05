@@ -1,3 +1,14 @@
+/*
+  2.4l General Motors engine simulator
+  Simulator produces 0-5v square wave pulses coinciding with bse engine timing for crankshaft and camshafts
+  Also produces simulated signals for MAP and MAF based on inputs from an APP potentiometer
+
+  All outputs route through 74HCT125 to bring digital high to 5V
+  Analog intputs to ECM are then routed to RC low pass filters
+
+*/
+
+#include <Arduino.h>
 
 int RPMpin = 5;
 int MAFHzPin = 16;
